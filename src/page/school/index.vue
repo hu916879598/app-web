@@ -2,13 +2,6 @@
   <div v-title="'茶学堂'">
     <Header :title="head.title" :showLeft="false" :status="1" @selectTap="appTap(1)"></Header>
     <div class="content">
-      <span class="iconfont icon-shuaxin" style="font-size: 50px;"></span>
-      <ul>
-        <li v-for="(item, index) in list" :key="index">
-          <img v-lazy="item">
-        </li>
-      </ul>
-      <img src="../../common/images/MAX.jpg" width="300">
     </div>
     <router-view></router-view>
   </div>
